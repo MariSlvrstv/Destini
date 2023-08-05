@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Destini" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="eRa-p1-TSq">
+                                <rect key="frame" x="-282.66666666666669" y="-470.66666666666669" width="958.33333333333348" height="1793.3333333333333"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oAg-l0-fXA">
+                                <rect key="frame" x="20" y="59" width="353" height="759"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story Label " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kwv-Hi-ULn">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="539"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="54A-DW-3er">
+                                        <rect key="frame" x="0.0" y="549" width="353" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="qfa-wC-EsJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="ChoiceOne" backgroundImage="choice1Background"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vdv-F7-hc2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="hr4-6E-5yf">
+                                        <rect key="frame" x="0.0" y="659" width="353" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="SSR-Be-9lA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="ChoiceTwo" backgroundImage="choice2Background">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7RX-F0-AZO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hr4-6E-5yf" firstAttribute="leading" secondItem="oAg-l0-fXA" secondAttribute="leading" id="OJd-3M-qj3"/>
+                                    <constraint firstAttribute="trailing" secondItem="hr4-6E-5yf" secondAttribute="trailing" id="ZJk-te-4VX"/>
+                                    <constraint firstAttribute="trailing" secondItem="54A-DW-3er" secondAttribute="trailing" id="hKP-bM-O6C"/>
+                                    <constraint firstItem="54A-DW-3er" firstAttribute="leading" secondItem="oAg-l0-fXA" secondAttribute="leading" id="lP4-hO-AB6"/>
+                                    <constraint firstItem="Kwv-Hi-ULn" firstAttribute="leading" secondItem="oAg-l0-fXA" secondAttribute="leading" id="uaL-Wy-ftq"/>
+                                    <constraint firstAttribute="trailing" secondItem="Kwv-Hi-ULn" secondAttribute="trailing" id="wIA-zb-f8x"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eRa-p1-TSq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6an-Sf-wgq"/>
+                            <constraint firstItem="eRa-p1-TSq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LJa-HQ-wUz"/>
+                            <constraint firstItem="oAg-l0-fXA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="YVl-4b-ggW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oAg-l0-fXA" secondAttribute="trailingMargin" constant="20" id="ciZ-Wa-BET"/>
+                            <constraint firstItem="oAg-l0-fXA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="d42-CM-4aJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oAg-l0-fXA" secondAttribute="bottom" id="dea-rP-0vQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="choiceOne" destination="54A-DW-3er" id="nmV-gG-MHp"/>
+                        <outlet property="choiceTwo" destination="hr4-6E-5yf" id="Ccb-9g-g5M"/>
+                        <outlet property="storyLabel" destination="Kwv-Hi-ULn" id="Xpq-54-s8f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="958" height="1793"/>
+        <image name="choice1Background" width="1370.6666259765625" height="363"/>
+        <image name="choice2Background" width="1370.6666259765625" height="363"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
